@@ -24,7 +24,7 @@ const csvContent = appointments.map((appointment) => {
 
 const link = document.createElement("a");
 link.setAttribute("href", "data:attachment/csv," + header + encodeURIComponent(csvContent));
-link.setAttribute("download", "MeineTermine.csv");
+link.setAttribute("download", "MyAppointmentsGoogle.csv");
 document.body.appendChild(link); // Required for FF
 
 link.click();
